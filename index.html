@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+      body{
+            font-family: 'Roboto', sans-serif;
+      }
+</style>
+
+
+</head>
+<body id="night">
+
+ <center>
+       <h1 class="night">Night Mode</h1>
+       <input type="radio" id="ON" name="night" value="On" onclick="On()">
+       <label for="on" id="onn">On</label>
+       <input type="radio" id="OFF" name="night" value="Off" onclick="Off()">
+       <label for="off" id="offf">Off</label><br>
+ </center>
+
+ <script>
+
+
+      function On() {
+            document.querySelector(".night").style.color = "#ffffff"; document.getElementById("night").style.background = "#000000";
+
+            document.querySelector("#onn").style.color = '#ffffff';
+            document.querySelector("#offf").style.color = '#ffffff'
+      }
+      
+      function Off() {
+          document.getElementById("night").style.background = "#fff";
+          document.querySelector(".night").style.color = "#000";
+          document.querySelector("#onn").style.color = '#000';
+          document.querySelector("#offf").style.color = '#000'
+    }
+</script>
+
+
+
+
+</body>  
+</html>
